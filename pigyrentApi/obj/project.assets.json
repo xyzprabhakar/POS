@@ -280,23 +280,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\prabhakarsingh\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Prabhakar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VSTS Projects\\pos\\POS\\pigyrentApi\\pigyrentApi.csproj",
+      "projectUniqueName": "D:\\Programe\\VSTS Projects\\POS\\POS\\pigyrentApi\\pigyrentApi.csproj",
       "projectName": "pigyrentApi",
-      "projectPath": "D:\\VSTS Projects\\pos\\POS\\pigyrentApi\\pigyrentApi.csproj",
-      "packagesPath": "C:\\Users\\prabhakarsingh\\.nuget\\packages\\",
-      "outputPath": "D:\\VSTS Projects\\pos\\POS\\pigyrentApi\\obj\\",
+      "projectPath": "D:\\Programe\\VSTS Projects\\POS\\POS\\pigyrentApi\\pigyrentApi.csproj",
+      "packagesPath": "C:\\Users\\Prabhakar\\.nuget\\packages\\",
+      "outputPath": "D:\\Programe\\VSTS Projects\\POS\\POS\\pigyrentApi\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\prabhakarsingh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Prabhakar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -349,7 +345,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
