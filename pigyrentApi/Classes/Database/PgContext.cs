@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace pigyrentApi.Classes.Database
 {
-    public class PgContext
+    public class PgContext : IdentityDbContext<ApplicationUser>
     {
     }
 }

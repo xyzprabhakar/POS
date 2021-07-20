@@ -46,4 +46,15 @@ namespace pigyrentApi.Classes.Database
         public DateTime? ModifiedDt { get; set; }
         public string ModifiedByName { get; set; }
     }
+
+
+    public class tbl_Address
+    {
+        public int? CountryId { get; set; }
+        public int? StateId { get; set; }
+        public int? LocaltyId { get; set; }
+        public string Address { get; set; }
+        public string longitude { get; set; }
+        public string latitude { get; set; }
+    }
 }
