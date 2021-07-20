@@ -5,8 +5,6 @@ using System.Threading.Tasks;
 
 namespace pigyrentApi.Classes.Database
 {
-    public class Users
-    {
-        
-    }
+     
+    
 }
