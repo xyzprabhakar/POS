@@ -25,10 +25,6 @@ namespace pigyrentApi.Classes.Database
         [MaxLength(200)]
         public string Capital { get; set; }
         [MaxLength(100)]
-        public string currency { get; set; }
-        [MaxLength(100)]
-        public string CurrencySymbol { get; set; }
-        [MaxLength(100)]
         public string Domain { get; set; }
         [MaxLength(100)]
         public string Native { get; set; }
@@ -102,7 +98,20 @@ namespace pigyrentApi.Classes.Database
         [NotMapped]
         public virtual string StateName { get; set; }
     }
-    public class tblBankMaster
+    public class tbl_Country_Bank
+    {
+        [Key]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+        [ForeignKey("tbl_Country_Master")]
+        public int? CountryId { get; set; }
+        public tbl_Country_Master tbl_Country_Master { get; set; }
+        [ForeignKey("tbl_Bank_Master")]
+        public int? BankIdId { get; set; }
+        public tbl_Bank_Master tbl_Bank_Master { get; set; }
+        public bool IsDefualt { get; set; }
+    }
+    public class tbl_Bank_Master
     {
         [Key]
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
@@ -112,5 +121,30 @@ namespace pigyrentApi.Classes.Database
         public string BankName { get; set; }
         public bool IsActive { get; set; }
     }
-
+    public class tbl_Country_Currency : tbl_Modified_By
+    {
+        [Key]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+        [ForeignKey("tbl_Country_Master")]
+        public int? CountryId { get; set; }
+        public tbl_Country_Master tbl_Country_Master { get; set; }
+        [ForeignKey("tbl_Currency_Master")]
+        public int? CurrencyId { get; set; }
+        public tbl_Currency_Master tbl_Currency_Master { get; set; }
+        public bool IsDefualt { get; set; }
+    }
+    public class tbl_Currency_Master : tbl_Created_Modified_By
+    {
+        [Key]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
+        public int CurrencyId { get; set; }
+        [MaxLength(100)]
+        public string GenralName { get; set; }
+        [MaxLength(100)]
+        public string Name { get; set; }
+        [MaxLength(100)]
+        public string Symbol { get; set; }
+    }
+    
 }

@@ -15,6 +15,19 @@ namespace pigyrentApi.Classes.Enums
         Male=1,
         Female=2,
         Other=3
-
+    }
+    public enum enmDataType
+    { 
+        Numeric,
+        Text,
+        Decimal,
+        DateTime
+    }
+    public enum enmApprovalStatus
+    {
+        Pending=0,
+        Approve=1,
+        Rejected=2,
+        InProcess=3
     }
 }
