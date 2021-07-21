@@ -56,3 +56,13 @@ D:\Programe\VSTS Projects\POS\POS\pigyrentApi\obj\Debug\net5.0\pigyrentApi.dll
 D:\Programe\VSTS Projects\POS\POS\pigyrentApi\obj\Debug\net5.0\ref\pigyrentApi.dll
 D:\Programe\VSTS Projects\POS\POS\pigyrentApi\obj\Debug\net5.0\pigyrentApi.pdb
 D:\Programe\VSTS Projects\POS\POS\pigyrentApi\obj\Debug\net5.0\pigyrentApi.genruntimeconfig.cache
+D:\Programe\AlpinistInfotech\POS\pigyrentApi\obj\Debug\net5.0\pigyrentApi.csprojAssemblyReference.cache
+D:\Programe\AlpinistInfotech\POS\pigyrentApi\obj\Debug\net5.0\pigyrentApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programe\AlpinistInfotech\POS\pigyrentApi\obj\Debug\net5.0\pigyrentApi.AssemblyInfoInputs.cache
+D:\Programe\AlpinistInfotech\POS\pigyrentApi\obj\Debug\net5.0\pigyrentApi.AssemblyInfo.cs
+D:\Programe\AlpinistInfotech\POS\pigyrentApi\obj\Debug\net5.0\pigyrentApi.csproj.CoreCompileInputs.cache
+D:\Programe\AlpinistInfotech\POS\pigyrentApi\obj\Debug\net5.0\pigyrentApi.MvcApplicationPartsAssemblyInfo.cs
+D:\Programe\AlpinistInfotech\POS\pigyrentApi\obj\Debug\net5.0\pigyrentApi.MvcApplicationPartsAssemblyInfo.cache
+D:\Programe\AlpinistInfotech\POS\pigyrentApi\obj\Debug\net5.0\pigyrentApi.dll
+D:\Programe\AlpinistInfotech\POS\pigyrentApi\obj\Debug\net5.0\ref\pigyrentApi.dll
+D:\Programe\AlpinistInfotech\POS\pigyrentApi\obj\Debug\net5.0\pigyrentApi.pdb

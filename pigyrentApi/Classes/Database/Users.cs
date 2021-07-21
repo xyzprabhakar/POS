@@ -5,28 +5,46 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using pigyrentApi.Classes.Enums;
 
 namespace pigyrentApi.Classes.Database
 {
-    public class tbl_User_Master : IdentityUser
+    public class tbl_User_Master : IdentityUser<ulong>
     {
-        public bool IsTerminated { get; set; }
-        
+
+        [ForeignKey("tbl_Broker_Master")]
+        public ulong BrokerId { get; set; }
+        public tbl_Broker_Master tbl_Broker_Master { get; set; }
+
     }
 
-    public class tbl_User_detail
+    public class tbl_role_master : IdentityRole<ulong>
+    { 
+
+    }
+
+    public class tbl_Broker_Master
     {   
         [Key]
-        public Int64 Id { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public ulong BrokerId { get; set; }
+        public enmGender Gender { get; set; }
+        [MaxLength(50)]
         public string FirstName { get; set; }
+        [MaxLength(50)]
         public string MiddleName { get; set; }
+        [MaxLength(50)]
         public string LastName { get; set; }
-        public int? SponsorId { get; set; }
+        [ForeignKey("tbl_Broker_Master")]
+        public ulong? SponsorBrokerId { get; set; }
+        public tbl_Broker_Master tbl_SponsorBroker{ get; set; }
         public DateTime JoiningDt { get; set; }
+        public DateTime Dob { get; set; }
         public bool TerminatedDate { get; set; }
-        [ForeignKey("tbl_User_Master")]
-        public string UserId { get; set; }
-        public  tbl_User_Master tbl_User_Master { get; set; }
+        public bool IsTerminated { get; set; }
     }
+
+
+
 
 }
