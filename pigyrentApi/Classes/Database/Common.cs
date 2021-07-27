@@ -78,10 +78,20 @@ namespace pigyrentApi.Classes.Database
         public string ModifiedByName { get; set; }
     }
 
+
+
     #endregion
 
-
-    public class tbl_Address
+    public interface Itbl_Address
+    {
+        string Address { get; set; }
+        int? CountryId { get; set; }
+        string latitude { get; set; }
+        int? LocaltyId { get; set; }
+        string longitude { get; set; }
+        int? StateId { get; set; }
+    }
+    public class tbl_Address : Itbl_Address
     {
         public int? CountryId { get; set; }
         public int? StateId { get; set; }
