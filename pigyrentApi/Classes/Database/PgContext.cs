@@ -27,6 +27,7 @@ namespace pigyrentApi.Classes.Database
         #region ********************Product Masters *******************************   
         public DbSet<tbl_Product_Category> tbl_Product_Category { get; set; }
         public DbSet<tbl_Category_Attribute> tbl_Category_Attribute { get; set; }
+        public DbSet<tbl_Product_Category_Tree> tbl_Product_Category_Tree { get; set; }
         public DbSet<tbl_Product_Master> tbl_Product_Master { get; set; }
         public DbSet<tbl_Product_Details> tbl_Product_Details { get; set; }
         public DbSet<tbl_Product_Status_Detail> tbl_Product_Status_Detail { get; set; }

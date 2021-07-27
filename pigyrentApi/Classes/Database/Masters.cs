@@ -33,9 +33,11 @@ namespace pigyrentApi.Classes.Database
         [ForeignKey("tbl_Product_Parent_Category")]
         public int? ParentCategoryId { get; set; }
         public tbl_Product_Category tbl_Product_Parent_Category { get; set; }
-        public int DisplayOrder { get; set; }
+        public int DepthId { get; set; }
         public bool IsActive { get; set; }
     }
+
+    public class 
 
 
     public class tbl_Category_Attribute : tbl_Created_Modified_By
