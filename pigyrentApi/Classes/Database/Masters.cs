@@ -23,6 +23,20 @@ namespace pigyrentApi.Classes.Database
         public bool IsActive { get; set; }
     }
 
+    public class tbl_Product_Category_Tree 
+    {
+        [Key]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
+        public int CategoryId { get; set; }
+        [MaxLength(50)]
+        public string CategoryName { get; set; }
+        [ForeignKey("tbl_Product_Parent_Category")]
+        public int? ParentCategoryId { get; set; }
+        public tbl_Product_Category tbl_Product_Parent_Category { get; set; }
+        public int DisplayOrder { get; set; }
+        public bool IsActive { get; set; }
+    }
+
 
     public class tbl_Category_Attribute : tbl_Created_Modified_By
     {
