@@ -22,7 +22,7 @@ namespace pigyrentApi.Classes.Database
     { 
 
     }
-
+    
     public class tbl_Broker_Master
     {   
         [Key]
@@ -44,6 +44,16 @@ namespace pigyrentApi.Classes.Database
         public bool IsTerminated { get; set; }
     }
 
+    public class tbl_Broker_Tree
+    {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public ulong Sno { get; set; }
+        public ulong BrokerId { get; set; }
+        public int? SponsorBrokerId { get; set; }
+        public int DepthId { get; set; }
+        public bool IsActive { get; set; }
+    }
 
 
 

@@ -22,6 +22,12 @@ namespace pigyrentApi.Classes.Database
 
         #region ********************User Masters *******************************   
         public DbSet<tbl_User_Master> tbl_User_Master { get; set; }
+        public DbSet<tbl_role_master> tbl_role_master { get; set; }
+
+        #endregion
+        #region ********************User Masters *******************************   
+        public DbSet<tbl_Broker_Tree> tbl_Broker_Tree { get; set; }
+        public DbSet<tbl_Broker_Master> tbl_Broker_Master { get; set; }        
         #endregion
 
         #region ********************Product Masters *******************************   
