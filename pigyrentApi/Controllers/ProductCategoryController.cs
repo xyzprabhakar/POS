@@ -11,6 +11,6 @@ namespace pigyrentApi.Controllers
     [ApiController]
     public class ProductCategoryController : ControllerBase
     {
-        public List<int>
+        
     }
 }
