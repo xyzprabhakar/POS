@@ -55,6 +55,4 @@ namespace pigyrentApi.Classes.Database
         public bool IsActive { get; set; }
     }
 
-
-
 }
