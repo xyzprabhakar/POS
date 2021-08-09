@@ -30,4 +30,14 @@ namespace pigyrentApi.Classes.Enums
         Rejected=2,
         InProcess=3
     }
+    public enum enmProductStatus
+    {
+
+        Active=1,
+        Hold=2,
+        Booked=3,
+        Release=4,
+        Deactive = 5,
+
+    }
 }

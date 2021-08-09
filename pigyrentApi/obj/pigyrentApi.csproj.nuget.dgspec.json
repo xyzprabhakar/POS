@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programe\\AlpinistInfotech\\POS\\pigyrentApi\\pigyrentApi.csproj": {}
+    "D:\\VSTS Projects\\pos\\POS\\pigyrentApi\\pigyrentApi.csproj": {}
   },
   "projects": {
-    "D:\\Programe\\AlpinistInfotech\\POS\\pigyrentApi\\pigyrentApi.csproj": {
+    "D:\\VSTS Projects\\pos\\POS\\pigyrentApi\\pigyrentApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programe\\AlpinistInfotech\\POS\\pigyrentApi\\pigyrentApi.csproj",
+        "projectUniqueName": "D:\\VSTS Projects\\pos\\POS\\pigyrentApi\\pigyrentApi.csproj",
         "projectName": "pigyrentApi",
-        "projectPath": "D:\\Programe\\AlpinistInfotech\\POS\\pigyrentApi\\pigyrentApi.csproj",
+        "projectPath": "D:\\VSTS Projects\\pos\\POS\\pigyrentApi\\pigyrentApi.csproj",
         "packagesPath": "C:\\Users\\prabhakarsingh\\.nuget\\packages\\",
-        "outputPath": "D:\\Programe\\AlpinistInfotech\\POS\\pigyrentApi\\obj\\",
+        "outputPath": "D:\\VSTS Projects\\pos\\POS\\pigyrentApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -100,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -22,7 +22,22 @@ namespace pigyrentApi.Classes.Database
         public int DisplayOrder { get; set; }
         public bool IsActive { get; set; }
     }
-    public class tbl_Category_Addition_Attribute : tbl_Created_Modified_By
+
+    public class tbl_Product_Category_Tree 
+    {
+        [Key]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
+        public int Sno{ get; set; }
+        public int CategoryId { get; set; }
+        public int? ParentCategoryId { get; set; }
+        public int DepthId { get; set; }
+        public bool IsActive { get; set; }
+    }
+
+    
+
+
+    public class tbl_Category_Attribute : tbl_Created_Modified_By
     {
         [Key]
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
@@ -43,15 +58,57 @@ namespace pigyrentApi.Classes.Database
     }
     #endregion
 
-    public class tbl_Product_Master:tbl_Created_Modified_Approved_By
+    public class tbl_Product_Master:tbl_Created_Modified_Approved_By, Itbl_Address
     {
         [Key]
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
-        public int ProductId { get; set; }
-        
+        public ulong ProductId { get; set; }
+        [MaxLength(200)]
+        public string ProductName { get; set; }
+        [MaxLength(2000)]
+        public string Description { get; set; }
+        [ForeignKey("tbl_Product_Category")]
+        public int? CategoryId { get; set; }
+        public tbl_Product_Category tbl_Product_Category { get; set; }
+        string Itbl_Address.Address { get; set; }
+        int? Itbl_Address.CountryId { get; set; }
+        string Itbl_Address.latitude { get; set; }
+        int? Itbl_Address.LocaltyId { get; set; }
+        string Itbl_Address.longitude { get; set; }
+        int? Itbl_Address.StateId { get; set; }         
+        public DateTime ValidFromDate { get; set; }
+        public DateTime ValidToDate { get; set; }
+        public double Price { get; set; }        
+        public enmProductStatus ProductStatus { get; set; }
     }
 
+    public class tbl_Product_Details : tbl_Modified_By
+    {
+        [Key]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
+        public ulong ProductDetailId { get; set; }
+        [ForeignKey("tbl_Product_Master")]
+        public ulong? ProductId { get; set; }
+        public tbl_Product_Master tbl_Product_Master { get; set; }
+        [ForeignKey("tbl_Category_Attribute")]
+        public int? AttributeId { get; set; }
+        public tbl_Category_Attribute tbl_Category_Attribute { get; set; }
+        [MaxLength(2000)]
+        public string AttributeValue { get; set; }
+        public bool IsDeleted { get; set; }
+    }
 
-
+    public class tbl_Product_Status_Detail : tbl_Modified_By
+    {
+        [Key]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
+        public int StatusDetailId { get; set; }
+        [ForeignKey("tbl_Product_Master")]
+        public ulong? ProductId { get; set; }
+        public tbl_Product_Master tbl_Product_Master { get; set; }
+        public enmProductStatus ProductStatus { get; set; }
+        public string Remarks { get; set; }
+        public bool IsActive { get; set; }
+    }
 
 }
